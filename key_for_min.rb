@@ -4,6 +4,9 @@
 def key_for_min_value(name_hash)
   lowest = 100
   returnName = ""
+  if name_hash.length == 0
+    return nil
+  end  
   name_hash.each do |name, num|
     if num < lowest
       lowest = num
